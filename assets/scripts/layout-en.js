@@ -1,5 +1,5 @@
 div.header {
-  document.getElementById.innerHTML = "
+  document.getElementById("header").innerHTML = "
     <h1>Test</h1>
 "
 }
