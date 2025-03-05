@@ -1,9 +1,2 @@
-div.header {
+// HEADER //
   document.getElementById("header").innerHTML = "<h1>Test</h1>"
-}
-div.body {
-  
-}
-div.footer {
-  
-}
