@@ -13,9 +13,9 @@
     <h4>We send you back in <span id="klok">5</span> to the home page!</h4>
      <script>
     let timeLeft = 5;
-    const timerElement = document.getElementById('klok');
-
-    const countdown = setInterval(() => {
+    const timerElement = document.getElementsByClass('klok');
+    for (var i = 0, max = timerElement.length; i < max; i++) {
+        const countdown = setInterval(() => {
         timeLeft--;
         timerElement.innerHTML = timeLeft;
 
@@ -24,6 +24,7 @@
             timerElement.innerHTML = "0";
         }
     }, 1000);
+    }
       </script>
   </body>
 </html>
