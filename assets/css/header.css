@@ -1,5 +1,6 @@
 body{
   width: auto;
   height: 75px;
-  font-family: Circular, Ubuntu, Roboto, -apple-system, BlinkMacSystemFont, Helvetica, sans-serif,;
+  font-family: Circular, Ubuntu, Roboto, -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+  background: linear-gradient(to right, #0d0d0f, #3431ca), #3431ca;
 }
