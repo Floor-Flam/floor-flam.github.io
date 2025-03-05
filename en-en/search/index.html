@@ -9,13 +9,13 @@
     </style>
     <script>
       const searchparam = new URLSearchParams(window.location.search)
-      const searchcontent = searchparam.get("search") || "";
+      const searchcontent = searchparam.get("q") || "";
       document.getElementById("search").value = searchcontent;
     </script>
   </head>
   <body>
   <form action="/en-en/search/">
-    <input type="search" id="search" name="search">
+    <input type="text" id="search" name="q">
     <button type="submit" id="submit"><i class="fa fa-search"></i></button>
     </form>
   </body>
