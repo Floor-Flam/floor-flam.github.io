@@ -8,7 +8,8 @@
       
     </style>
     <script>
-      let searchcontent = new URLSearchParams.get("search") || "";
+      let searchparam = new URLSearchParams(document.location.search)
+      let searchcontent = searchparam.get("search") || "";
       document.getElementById("search").setAttribute("value", "${searchcontent}");
     </script>
   </head>
