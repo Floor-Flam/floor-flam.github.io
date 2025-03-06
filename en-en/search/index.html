@@ -10,13 +10,14 @@
     <script>
       const searchparam = new URLSearchParams(window.location.search)
       const searchcontent = searchparam.get("q") || "";
-      document.getElementById("search").value = `${searchcontent}`;
+      document.getElementById("search").innerhtml = `${searchcontent}`;
     </script>
   </head>
   <body>
   <form action="https://floor-flam.github.io/en-en/search/">
-    <input type="text" id="search" name="q" value="search" placeholder="Search...">
+    <input type="text" class="search" name="q" value="search" placeholder="Search...">
     <button type="submit" id="submit"><i class="fa fa-search"></i></button>
+    <br><p>You searched: <span id="search"></span></p>
     </form>
   </body>
 </html>
