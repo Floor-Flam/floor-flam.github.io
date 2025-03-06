@@ -10,7 +10,7 @@
     <script>
       const searchparam = new URLSearchParams(window.location.search)
       const searchcontent = searchparam.get("q") || "";
-      document.getElementById("search").innerhtml = $("#searchBar").val();
+      document.getElementById("search").innerhtml = new URLSearchParams(window.location.search).get("q") || "";
     </script>
   </head>
   <body>
